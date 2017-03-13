@@ -2,6 +2,10 @@ h1 {
   text-align: center;
   font-family: arial;
 }
+h2 {
+  text-align: center;
+  font-family: arial;
+}
 #container {
   display: flex;
   justify-content: center;
@@ -15,7 +19,24 @@ h1 {
   height: 306px;
 }
 .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid black;
   width: 100px;
   height: 100px;
+  text-align: center;
+  font-family: arial;
+  font-size: 24px;
+  font-weight: 300px;
+}
+button {
+  text-align: center;
+  font-family: arial;
+  font-size: 24px;
+  font-weight: bold;
+  width: 150px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  border: 2px solid black;
 }
