@@ -33,6 +33,25 @@ function start_game() {
     $('h2').text('Turn: ' + currentPlayer.player);
     moves += 1;
   };
+  
+  function won(value, move) {
+    var val1 = value.sort();
+    var flag = false;
+    for (var i = 0; i < 8; i++ ) {
+      var count = 0;
+      for (var k = 0; k < move[i].length; k++) {
+        if (val1.indexOf(move[i][k]) > -1) { count++; }
+      }
+      if (count >= 3) {
+        flag = true;
+        move[i].forEach(function(cell){
+          $('#' + cell).css("background-color","#A9A9A9");
+        });
+      }
+    }
+    return flag;
+  }
+};
 
 $(document).ready(function(){
   $('#start').click(function(){
