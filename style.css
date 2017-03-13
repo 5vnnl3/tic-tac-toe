@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+  font-family: arial;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  flex-basis: 306px;
+  height: 306px;
+}
+.cell {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
