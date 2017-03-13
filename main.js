@@ -27,6 +27,12 @@ function start_game() {
       }
     }
   });
+  
+  function turn() {
+    currentPlayer = (currentPlayer === player1) ? player2 : player1;
+    $('h2').text('Turn: ' + currentPlayer.player);
+    moves += 1;
+  };
 
 $(document).ready(function(){
   $('#start').click(function(){
